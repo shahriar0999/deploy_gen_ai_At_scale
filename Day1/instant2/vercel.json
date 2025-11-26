@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "instant2.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "instant2.py"
+        }
+    ]
+}
